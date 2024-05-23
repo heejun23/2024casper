@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+form{
+  width: 100%;
+  border: none;
+}
+fieldset{
+  width: 500px;
+  background: #eeeeee;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  font-size: var(--f_size1);
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 80px 50px;
+  box-sizing: border-box;
+}
+fieldset p:first-child{display: block; width: 100%;}
+fieldset p:first-child img{
+  margin: 0 auto 30px auto;
+  display: block;
+}
+fieldset p:nth-child(2) label,
+fieldset p:nth-child(3) label
+{display: none;}
+#id_txt, #pw_txt{
+  width: calc(100% - 15px);
+  padding: 15px 0 15px 10px;
+  border: 1px solid #ccc;
+}
+
+#pw_txt{margin: 15px auto;}
+#id_save{
+  font-size: var(--f_size1);
+  cursor: pointer;
+}
+#login_btn{
+  width: 100%;
+  border: none;
+  background: var(--s_color01);
+  color: var(--m_bg_color);
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: var(--f_size1);
+  margin: 15px 0;
+  cursor: pointer;
+}
+#login_btn:active{filter: brightness(.8);}
+#a_box{
+  width: fit-content;
+  margin: 20px auto;
+}
+a{
+  font-size: var(--f_size1);
+  border-right: 1px solid var(--f_color1);
+  padding: 0 20px;
+}
+a:last-of-type{border-right: none;}
